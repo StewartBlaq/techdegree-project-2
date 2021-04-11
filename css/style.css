@@ -25,12 +25,6 @@ a:hover{
   color: forestgreen;
   cursor: pointer;
 }
-ul{
-  clear: left;
-  padding: 0;
-  list-style-type: none;
-}
-
 .flex-head{
   display: flex;
   font-weight: bold;
@@ -52,69 +46,69 @@ ul{
   display: flex;
   font-weight: bold;
 }
+
+.flex-head, .main-wrapper{
+  flex-direction: column;
+}
+.head-name{
+  padding: 10px;
+}
+.head-item{
+  background-color: white;
+  margin-top: 5px;
+  padding: 10px;
+}
+.hero-wrapper{
+  margin: 50px 0 0;
+}
+.about-me{
+  margin: auto;
+  padding-bottom: 25px;
+}
+body{
+  text-align: center;
+}
+header{
+  padding: 0 15px;
+}
+.main-wrapper img{
+  width:100%;
+}
+.col-content{
+  padding:15px 50px;
+}
+.contact{
+  padding: 50px 0;
+}
+footer{
+  padding: 0 15px;
+}
+.bottom-bar{
+  padding: 25px 0;
+  justify-content: space-between;
+}
+.bottom-home, .bottom-port, .bottom-contact, .bottom-skills{
+  display: none;
+}
+li{
+  width:100%;
+  padding: 50px 0;
+  border: grey dashed 1px;
+}
+ul{
+  clear: left;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
 /*******************************
         Media queries
 *******************************/
 
-@media screen and (min-width: 320px){
-  .flex-head, .main-wrapper{
-    flex-direction: column;
-  }
-  .head-name{
-    padding: 10px;
-  }
-  .head-item{
-    background-color: white;
-    margin-top: 5px;
-    padding: 10px;
-  }
-  .hero-wrapper{
-    margin: 50px 0 0;
-  }
-  .about-me{
-    margin: auto;
-    padding-bottom: 25px;
-  }
-  body{
-    text-align: center;
-  }
-  header{
-    padding: 0 15px;
-  }
-  .main-wrapper img{
-    width:100%;
-  }
-  .col-content{
-    padding:15px 50px;
-  }
-  .contact{
-    padding: 50px 0;
-  }
-  footer{
-    padding: 0 15px;
-  }
-  .bottom-bar{
-    padding: 25px 0;
-    justify-content: space-between;
-  }
-  .bottom-home, .bottom-port, .bottom-contact, .bottom-skills{
-    display: none;
-  }
-  li{
-    width:100%;
-    padding: 50px 0;
-    border: grey dashed 1px;
-  }
-  ul{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-  }
-
-}
-
-@media screen and (min-width: 765px){
+@media screen and (min-width: 768px){
   .head-name{
     order: 1;
     flex: 0 0 100%;
